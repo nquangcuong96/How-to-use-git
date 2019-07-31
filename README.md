@@ -1,19 +1,24 @@
-# My test file
-## Creator: Quang Cuong
+# User manual
 
+## Install pygame
+1. First, run terminal
+2. Go to your code place
+3. Type **_-pip install pygame_** or **_python3 -m pip install -U pygame --user_**
+4. To see if it works, type **_python3 -m pygame.examples.aliens_**
 
-I try to create a readme file:
-> This is my first file
+> Base on how you define the key work to open python, the comand may like **_py -m pip install -U pygame --user_**  instead of python3. You also can use **_pipenv shell --three_** to set your own enviroment and type **_pipenv install pygame_** to install pygame on that enviroment only
 
-**_I will write hello world code in python_**
-```
-my_string = "Hello world"
-print(my_string)
+## How to use functions in _main.py_
+1. Create some variable and set value for these
+2. Create a variable and assign to the function
+3. Print this variable to screen to see the result
 
-```
+## How to use *test_py.py*
+1. Do step 1 and 2 in **Install pygame**
+2. Type **_pip install -U pytest_**
+3. Type **_pytest_** to run
 
-There are some things I need to remember:
-1. First I must write readme.md for each project
-2. When commit something, I must write message
-3. I should create a changelog file when I want change somethings
-4. Forget all these above
+> You also can install these things at the third enviroment by change **_pip_** to **_pipenv_**, make sure that you open the third enviroment first
+
+##### Update date 31/07/2019
+
