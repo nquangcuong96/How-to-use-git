@@ -22,7 +22,7 @@ class MyTest(unittest.TestCase):
 ```
 My py file name python_basic.py, so I type **_import python_basic as main_**
  
-6. Type **_pytest_** to run the test
+6. Type **_pytest -v_** to run the test
 
 ### Note: All your function must be the same name with the functions which was already noted in README.md file
 
