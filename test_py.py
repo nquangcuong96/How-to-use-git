@@ -68,6 +68,17 @@ class MyTest(unittest.TestCase):
             ('Park Hyatt Saigon', 209)]
         price = 150
         self.assertEqual(main.find_cheapest_hotels(hotel_daily_rates,price),['Hotel Continental', 'Hotel Grand Saigon', 'Majestic Saigon Hotel', 'Sofitel Saigon Plaza'])
+    def test_waypoint6d(self):
+        hotel_daily_rates = [
+            ('Majestic Saigon Hotel', 93.55),
+            ('Hotel Grand Saigon', 93.56),
+            ('Sofitel Saigon Plaza', 100),
+            ('Hotel Continental', 93.55),
+            ('Caravelle Hotel', 110),
+            ('Sheraton Saigon Hotel', 93),
+            ('Park Hyatt Saigon', 120)]
+        price = 100
+        self.assertEqual(main.find_cheapest_hotels(hotel_daily_rates,price),['Sheraton Saigon Hotel','Majestic Saigon Hotel','Hotel Continental','Hotel Grand Saigon','Sofitel Saigon Plaza'])
     def test_waypoint7(self):
         p1 = (1,1)
         p2 = (2,2)
@@ -75,6 +86,9 @@ class MyTest(unittest.TestCase):
     def test_waypoint8(self):
         arr = [(0, 0), (3, 4), (-1, -1)]
         self.assertEqual(main.calculate_euclidean_distance_between_points(arr),11.403124237432849)
+    def test_waypoint8a(self):
+        arr = [(0,0.5),(3.5,4.5),(-2.5,-3.5)]
+        self.assertEqual(main.calculate_euclidean_distance_between_points(arr), 15.315072906367325)
     def test_waypoint9(self):
         string = '       khong           co           gi quy hon        doc    lap   tu  do'
         self.assertEqual(main.capitalize_words(string),'Khong Co Gi Quy Hon Doc Lap Tu Do')
@@ -117,6 +131,18 @@ class MyTest(unittest.TestCase):
     def test_waypoint14g(self):
         value = "No 'x' in Nixon"
         self.assertEqual(main.is_palindrome(value),True)
+    def test_waypoint14h(self):
+        value = ""
+        self.assertEqual(main.is_palindrome(value),False)
+    def test_waypoint14i(self):
+        value = "   "
+        self.assertEqual(main.is_palindrome(value),False)
+    def test_waypoint14j(self):
+        value = " !!!!@@%$^$%&^**&)([],><!!!  "
+        self.assertEqual(main.is_palindrome(value),False)
+    def test_waypoint14k(self):
+        value = None
+        self.assertEqual(main.is_palindrome(value),False)
     def test_waypoint15(self):
         value = 'XXXIX'
         self.assertEqual(main.roman_numeral_to_int(value),39)
