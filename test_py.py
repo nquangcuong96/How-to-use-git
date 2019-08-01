@@ -1,5 +1,5 @@
 import unittest
-import main
+import python_basics as main
 
 class MyTest(unittest.TestCase):
     def test_waypoint1(self):
@@ -179,4 +179,14 @@ class MyTest(unittest.TestCase):
     def test_waypoint15i(self):
         value = 'MMMCMXCIX'
         self.assertEqual(main.roman_numeral_to_int(value),3999)
+    def test_waypoint16(self):
+        MELODY_HAPPY_BIRTHDAY_TO_YOU = (
+            'C4', 'C4', 'D4', 'C4', 'F4', 'E4',
+            'C4', 'C4', 'D4', 'C4', 'G4', 'F4',
+            'C4', 'C4', 'C5', 'A4', 'F4', 'E4', 'D4',
+            'A#4', 'A#4', 'A4', 'F4', 'G4', 'F4',
+        )
+        addres = './sounds/piano'
+        self.assertEqual(main.play_melody(MELODY_HAPPY_BIRTHDAY_TO_YOU,addres),['./sounds/piano/c4.ogg', './sounds/piano/c4.ogg', './sounds/piano/d4.ogg', './sounds/piano/c4.ogg', './sounds/piano/f4.ogg', './sounds/piano/e4.ogg', './sounds/piano/c4.ogg', './sounds/piano/c4.ogg', './sounds/piano/d4.ogg', './sounds/piano/c4.ogg', './sounds/piano/g4.ogg', './sounds/piano/f4.ogg', './sounds/piano/c4.ogg', './sounds/piano/c4.ogg', './sounds/piano/c5.ogg', './sounds/piano/a4.ogg', './sounds/piano/f4.ogg', './sounds/piano/e4.ogg', './sounds/piano/d4.ogg', './sounds/piano/bb4.ogg', './sounds/piano/bb4.ogg', './sounds/piano/a4.ogg', './sounds/piano/f4.ogg', './sounds/piano/g4.ogg', './sounds/piano/f4.ogg']
+)
 
