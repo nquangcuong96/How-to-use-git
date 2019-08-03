@@ -202,7 +202,7 @@ class MyTest(unittest.TestCase):
             self.assertRaises(TypeError, main.play_melody, i, addres)
 
     def test_waypoint16b(self):
-        song = [('A4', 'A'), ('A4', 'Z4'), ('B#4', 'A4'), ('A4', 'A6'), ('E#2', 'E2')]
+        song = [('A4', 'A'), ('A4', 'Z4'), ('B#4', 'A4'), ('A4', 'A6'), ('E#2', 'E2'), ('A4', 'FB3')]
         addres = './sounds/piano'
         for i in song:
             self.assertRaises(ValueError, main.play_melody, i, addres)
