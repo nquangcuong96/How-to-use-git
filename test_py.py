@@ -160,14 +160,14 @@ class MyTest(unittest.TestCase):
     def test_waypoint15(self):
         value = ['XXXIX', 'CCXLVI', 'DCCLXXXIX', 'MMCDXXI', 'CLX', 'CCVII', 'MIX', 'MLXVI', 'MDCCLXXVI', 'MCMLIV',
                  'MMXIV', 'MMMCMXCIX']
-        ans = [39, 246, 789, 2421, 160, 207, 1009, 1066, 1776, 1954, 2014, 3999,0]
+        ans = [39, 246, 789, 2421, 160, 207, 1009, 1066, 1776, 1954, 2014, 3999]
         for i in range(len(value)):
             self.assertEqual(main.roman_numeral_to_int(value[i]), ans[i])
 
     def test_waypoint15a(self):
         value = ['a', 'MXM', 'IXC', 'IIIIIIIIII', 'XXXXXXXXXX', 'DD', 'VV', 'LL', 'CCCCCCCCCC', 'LC',
                  'MLM', 'MIM', 'IVX', 'VX', 'IL', 'IC', 'IXI',
-                 'IVIIIIII', 'IXABCD', 'NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN']
+                 'IVIIIIII', 'IXABCD', 'NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN','MMMM']
         for i in value:
             self.assertRaises(ValueError,main.roman_numeral_to_int, i)
 
