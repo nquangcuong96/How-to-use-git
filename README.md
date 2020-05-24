@@ -5,27 +5,15 @@
 2. Open terminal and go to your work place 
 3. Type **_pipenv shell --three_** to set your own eviroment. If you aleady doneit one time before, just type **_pipenv shell_**
 4. Type **_pipenv install pytest_** to install pytest
-5. Open __*test_py*__ file and **import** your py file as main
+5. Open terminal and type **_pytest -v_** to run the test
 
-```
-import unittest
-import python_basic as main
-
-class MyTest(unittest.TestCase):
-    def test_waypoint1(self):
-        name = '        world             '
-        self.assertEqual(main.hello(name),"Hello world!")
-    def test_waypoint2(self):
-        a = 3
-        b = 4
-
-```
-My py file name python_basic.py, so I type **_import python_basic as main_**
- 
-6. Type **_pytest -v_** to run the test
+## Result and Evaluate
+1. As least you need to pass all normal testcase. This the case name ***test_waypoint{the number}***. Example ***test_waypoint1***
+2. These testcases name ***test_waypoint{the number}{letter}***. Example ***test_waypoint1a*** will test if you validate input data or not. So it is find if you false these testcases, you can improve your code later after done all 16 waypoints
+3. In waypoint 16, this testcase only use to test if your list of path of sound files is correct or not. It wrong check if you play sound correct or not (correct here mean delay time between each sound file)
 
 ### Note: All your function must be the same name with the functions which was already noted in README.md file
 
 
-##### Update date 1/08/2019
+##### Update date 24/05/2020
 
