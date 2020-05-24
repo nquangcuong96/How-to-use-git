@@ -1,11 +1,13 @@
+# These testcases I create to help you test your project only. It is not final testcases that Intek use to test your project.
+
 # User manual
 
 ## How to use *test_py.py*
-1. Copy __*test_py*__ to your work place where your python file located
+1. Copy __*test_py.py*__ to your work place where your python file located
 2. Open terminal and go to your work place 
 3. Type **_pipenv shell --three_** to set your own eviroment. If you aleady doneit one time before, just type **_pipenv shell_**
 4. Type **_pipenv install pytest_** to install pytest
-5. Open terminal and type **_pytest -v_** to run the test
+5. Type **_pytest -v_** to run the test
 
 ## Result and Evaluate
 1. As least you need to pass all normal testcase. This the case name ***test_waypoint{the number}***. Example ***test_waypoint1***
@@ -14,6 +16,5 @@
 
 ### Note: All your function must be the same name with the functions which was already noted in README.md file
 
-
-##### Update date 24/05/2020
+#### Update date 24/05/2020
 
